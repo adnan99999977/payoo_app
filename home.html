@@ -13,21 +13,21 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="font-[poppins]">
+  <body class="font-[poppins] w-full p-5 m-auto ">
     <!-- nav_section -->
     <nav
-      class="flex justify-between items-center border-b border-gray-300 pb-4 p-6 bg-white"
+      class="  flex justify-between items-center  gap-5  border-gray-300 pb-4 p-2 bg-white"
     >
-      <div class="lef_side flex items-center">
-        <img src="./assets/Group.png" alt="" />
+      <div class=" lef_side flex items-center  ">
+        <img class="pb-4" src="./assets/Group.png" alt="" />
         <!-- nev info -->
         <div class="left_info">
           <h2 class="font-bold">BDT <span id="available_balance">4000</span></h2>
-          <p class="text-gray-600">Available Balance</p>
+          <p class="text-gray-600">Balance</p>
         </div>
       </div>
-      <div class="right_side">
-        <button id="logout_btn" class="btn btn-soft rounded-lg">
+      <div class="right_side ">
+        <button id="logout_btn" class="btn w-29 btn-soft rounded-lg">
           <img class="w-5" src="./assets/logout.png" alt="" />Log Out
         </button>
       </div>
@@ -35,10 +35,9 @@
 
     <!-- banner section -->
     <section class="banner p-5 bg-white ">
-      <h1 class="font-bold text-3xl mb-3">🔥 Welcome to Payooo!</h1>
-      <p class="w-100 pl-3 text-gray-600">
-        Enjoy easy and convenient financial services with us. Cashout charge is
-        low and
+      <h1 class="font-bold text-2xl mb-3">🔥 Welcome to <span class="pl-10">Payooo!</span></h1>
+      <p class=" pl-3 text-gray-600">
+        Enjoy easy and convenient financial services with us. 
       </p>
     </section>
 
@@ -46,7 +45,7 @@
 
     
         <section class="cards_sec bg-white ">
-     <div class="cards grid grid-cols-3 gap-5 p-5">
+     <div class="cards grid grid-cols-2  p-5 gap-3">
         <!-- add money card -->
         <div id="add_money" class="card w-33 h-24 flex flex-col cursor-pointer justify-center items-center shadow-xl hover:scale-110 transition-transform duration-300 ">
             <img class="w-8 mb-1 " src="./assets/wallet1.png" alt="">
@@ -84,7 +83,7 @@
     </section>
     
     <!-- blank item -->
-     <div id="blank_item" class=" mt-2 rounded-xl mb-5 w-90 h-18 shadow-2xl m-auto flex justify-center items-center">
+     <div id="blank_item" class="  mt-2 rounded-xl mb-2 w-72 h-18 shadow-2xl m-auto flex justify-center items-center">
       <p class="font-bold text-lg text-gray-500"> ⬆️ Click a card to move on ⬆️</p>
      </div>
 
