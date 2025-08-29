@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/payoo.png" type="image/x-icon" />
+    <title>Payoo App</title>
+    <!-- tailwind and daisy cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-[poppins]">
+    <main
+      class="bg-[rgba(244,245,247,1)] w-screen h-screen flex flex-col justify-center items-center "
+    ><div class="w-[320px] h-40 bg-[url('/assets/bg.png')] flex items-center justify-center">
+      <img class="" src="./assets/Group.png" alt="" >
+    </div>
+      <section class="form bg-white w-[330px] h-[260px] rounded-xl">
+        <form action="" class="p-6 space-y-5">
+          <!-- email input -->
+          <label for="">Enter Your Email :</label>
+          <label class="input validator">
+            <svg
+              class="h-[1em] opacity-50"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </g>
+            </svg>
+            <input id="email_input" type="email" placeholder="mail@site.com" required />
+          </label>
+        <!-- pin input -->
+          <label for="number">
+            Pin Number :
+          </label>
+          <input id="pin_input" type="text" placeholder="Enter Pin Number" class="input
+             " />
+             
+          <button type="button" id="login_btn" class="btn bg-[rgba(8,116,242,1)] text-white w-full hover:text-black hover:border-3  hover:bg-white duration-300">Log In</button>
+        </form>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
