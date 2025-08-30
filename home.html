@@ -45,37 +45,37 @@
 
     
         <section class="cards_sec bg-white ">
-     <div class="cards grid grid-cols-2  p-5 gap-3">
+     <div class="cards grid grid-cols-2  p-5 gap-2">
         <!-- add money card -->
-        <div id="add_money" class="card w-33 h-24 flex flex-col cursor-pointer justify-center items-center shadow-xl hover:scale-110 transition-transform duration-300 ">
+        <div id="add_money" class="card w-35 h-24 flex flex-col cursor-pointer justify-center items-center shadow-lg hover:scale-110 transition-transform duration-300 ">
             <img class="w-8 mb-1 " src="./assets/wallet1.png" alt="">
             <p>Add Money</p>
         </div>
        <!-- cash out card -->
-        <div id="cash_out" class="card w-33 h-24 flex flex-col cursor-pointer  justify-center items-center shadow-xl hover:scale-110 transition-transform duration-300">
+        <div id="cash_out" class="card w-35 h-24 flex flex-col cursor-pointer  justify-center items-center shadow-lg hover:scale-110 transition-transform duration-300">
             <img class="w-8 mb-1 " src="./assets/send1.png" alt="">
             <p>Cash Out</p>
         </div>
 
        <!-- transfer card -->
         
-        <div id="transfer" class="card w-33 h-24 flex flex-col cursor-pointer  justify-center items-center shadow-xl hover:scale-110 transition-transform duration-300">
+        <div id="transfer" class="card w-35 h-24 flex flex-col cursor-pointer  justify-center items-center shadow-lg hover:scale-110 transition-transform duration-300">
             <img class="w-8 mb-1 " src="./assets/money1.png" alt="">
             <p>Transfer Money</p>
         </div>
        <!-- get bonus card -->
 
-        <div id="bonus" class="card w-33 h-24 flex flex-col cursor-pointer  justify-center items-center shadow-xl  hover:scale-110 transition-transform duration-300">
+        <div id="bonus" class="card w-35 h-24 flex flex-col cursor-pointer  justify-center items-center shadow-lg hover:scale-110 transition-transform duration-300">
             <img class="w-8 mb-1 " src="./assets/bonus1.png" alt="">
             <p>Get Bonus</p>
         </div>
        <!-- pay bill card -->
-        <div id="pay_bill" class="card w-33 h-24 flex flex-col cursor-pointer  justify-center items-center shadow-xl hover:scale-110 transition-transform duration-300">
+        <div id="pay_bill" class="card w-35 h-24 flex flex-col cursor-pointer  justify-center items-center shadow-lg hover:scale-110 transition-transform duration-300">
             <img class="w-8 mb-1 " src="./assets/purse1.png" alt="">
             <p>Pay Bill</p>
         </div>
        <!-- transaction card -->
-        <div id="transaction" class="card  w-33 h-24 flex flex-col cursor-pointer  justify-center items-center shadow-xl  hover:scale-110 transition-transform duration-300">
+        <div id="transaction" class="card  w-35 h-24 flex flex-col cursor-pointer  justify-center items-center shadow-lg hover:scale-110 transition-transform duration-300">
             <img class="w-8 mb-1 " src="./assets/transaction1.png" alt="">
             <p>Transactions </p>
         </div>
@@ -83,19 +83,19 @@
     </section>
     
     <!-- blank item -->
-     <div id="blank_item" class="  mt-2 rounded-xl mb-2 w-72 h-18 shadow-2xl m-auto flex justify-center items-center">
-      <p class="font-bold text-lg text-gray-500"> ⬆️ Click a card to move on ⬆️</p>
+     <div id="blank_item" class="  mt-2 rounded-xl mb-2 w-65 p-4 h-18 shadow-lg m-auto flex justify-center items-center">
+      <p class="font-bold text-sm text-gray-500"> ⬆️ Click a card to forward ⬆️</p>
      </div>
 
     <!-- card details section -->
  
     <!-- add money details -->
-     <section id="add_money_sec" class=" hidden  cards_details  w-full h-full bg-[rgba(244,245,247,1)] mt-5 rounded-3xl p-5 mb-5">
+     <section id="add_money_sec" class=" hidden  cards_details  w-full h-full bg-[rgba(244,245,247,1)] mt-5 rounded-3xl  mb-5">
         <h2 id="add_money_h2" class="font-bold text-xl pl-3">Add Money</h2> 
         <!-- add money inputs -->
          <div class="details_inputs_card p-5 bg-white mt-3 rounded-xl w-[86%] m-auto space-y-4 ">
           <label for="">Select A Bank</label><br>
-          <select required class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] text-gray-500 " name="" id="">
+          <select required class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] text-gray-500 " name="" id="">
             <option disabled selected hidden  value="">Select Bank</option>
             <option value="IFIC Bank">IFIC Bank</option>
             <option value="Agroni Bank">Agroni Bank</option>
@@ -103,87 +103,87 @@
           </select><br>
           <!-- account number input -->
           <label  class="" for="">Account Number</label>
-          <input id="add_account_num" class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Your Account Number" type="text"><br>
+          <input id="add_account_num" class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Your Account Number" type="text"><br>
           <!-- pin number input -->
               <label class="" for="">Pin Number</label>
-              <input id="add_pin_num" class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter 4 Digit Pin" type="text"><br>
+              <input id="add_pin_num" class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter 4 Digit Pin" type="text"><br>
               <!-- amount to add input -->
                    <label class="" for="">Add To Amount</label>
-          <input id="add_amount_input" class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Your Amount" type="text"><br>
+          <input id="add_amount_input" class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Your Amount" type="text"><br>
           <!-- add money btn -->
-           <button  id="add_money_btn" class="btn rounded-3xl bg-[rgba(8,116,242,1)] text-white w-[90%] hover:text-black hover:border-1  hover:bg-[#a1c3fd] duration-300">Add Money</button>
+           <button  id="add_money_btn" class="btn rounded-3xl bg-[rgba(8,116,242,1)] text-white w-full hover:text-black hover:border-1  hover:bg-[#a1c3fd] duration-300">Add Money</button>
          </div>
             </div>
           
    </section>
 
    <!-- Cash out details -->
-     <section id="cash_out_sec" class="   cards_details hidden   w-full h-full bg-[rgba(244,245,247,1)] mt-5 rounded-3xl p-5 mb-5">
+     <section id="cash_out_sec" class="   cards_details hidden   w-full h-full bg-[rgba(244,245,247,1)] mt-5 rounded-3xl mb-5">
         <h2 id='cash_out_h2' class="font-bold text-xl pl-3">Cash Out</h2> 
         <!-- Cash out inputs -->
          <div class="details_inputs_card p-5 bg-white mt-3 rounded-xl w-[86%] m-auto space-y-4 ">   
           <!-- account number input -->
           <label class="" for="">Account Number</label>
-          <input id="cash_account_num" class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Your Account Number" type="text"><br>
+          <input id="cash_account_num" class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Your Account Number" type="text"><br>
           <!-- pin number input -->
               <label class="" for="">Pin Number</label>
-              <input id="cash_pin_num" class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter 4 Digit Pin" type="text"><br>
+              <input id="cash_pin_num" class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter 4 Digit Pin" type="text"><br>
               <!-- amount to add input -->
                    <label class="" for="">Add Amount</label>
-          <input id="cash_out_input" class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Amount To withdraw" type="text"><br>
+          <input id="cash_out_input" class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Amount To withdraw" type="text"><br>
           <!-- cash out btn -->
-           <button id="cash_out_btn" class="btn bg-[rgba(8,116,242,1)] text-white w-[90%]  rounded-3xl hover:text-black hover:border-1  hover:bg-[#70e2bc] duration-300">Withdraw Money</button>
+           <button id="cash_out_btn" class="btn bg-[rgba(8,116,242,1)] text-white w-full  rounded-3xl hover:text-black hover:border-1  hover:bg-[#70e2bc] duration-300">Withdraw Money</button>
          </div>
             </div>
           
    </section>
 
    <!-- transfer money details -->
-      <section id="transfer_sec" class="  hidden   cards_details  w-full h-full bg-[rgba(244,245,247,1)] mt-5 rounded-3xl p-5 mb-5">
+      <section id="transfer_sec" class="  hidden   cards_details  w-full h-full bg-[rgba(244,245,247,1)] mt-5 rounded-3xl mb-5">
         <h2 id="transfer_h2" class="font-bold text-xl pl-3">Transfer Money</h2> 
         <!-- transfers inputs -->
          <div class="details_inputs_card p-5 bg-white mt-3 rounded-xl w-[86%] m-auto space-y-4 ">   
           <!-- account number input -->
           <label class="" for="">Account Number</label>
-          <input id="transfer_account_num" class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Your Account Number" type="text"><br>
+          <input id="transfer_account_num" class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Your Account Number" type="text"><br>
           <!-- pin number input -->
               <label class="" for="">Pin Number</label>
-              <input id="transfer_pin_num" class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter 4 Digit Pin" type="text"><br>
+              <input id="transfer_pin_num" class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter 4 Digit Pin" type="text"><br>
               <!-- reciver input -->
                   <label class="" for="">Receiver Number</label>
-              <input id="receiver_input" class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Receiver Account Number" type="text"><br>
+              <input id="receiver_input" class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Receiver Account Number" type="text"><br>
               <!-- amount to add input -->
                    <label class="" for="">Add Amount</label>
-          <input id="transfer_input" class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Amount To Send" type="text"><br>
+          <input id="transfer_input" class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Amount To Send" type="text"><br>
           <!-- send money btn -->
-           <button  id="transfer_money_btn" class="btn bg-[rgba(8,116,242,1)] text-white  rounded-3xl w-[90%] hover:text-black hover:border-1  hover:bg-[#c59aee] duration-300">Send Money</button>
+           <button  id="transfer_money_btn" class="btn bg-[rgba(8,116,242,1)] text-white  rounded-3xl w-full hover:text-black hover:border-1  hover:bg-[#c59aee] duration-300">Send Money</button>
          </div>
             </div>
           
    </section>
 
    <!-- get bonus details -->
-    <section id="bonus_sec" class=" hidden  cards_details  w-full h-full bg-[rgba(244,245,247,1)] mt-5 rounded-3xl p-5 mb-5">
+    <section id="bonus_sec" class=" hidden  cards_details  w-full h-full bg-[rgba(244,245,247,1)] mt-5 rounded-3xl mb-5">
         <h2 id='bonus_h2' class="font-bold text-xl pl-3">Get Bonus</h2> 
         <!-- Get Bonus inputs -->
          <div class="details_inputs_card p-5 bg-white mt-3 rounded-xl w-[86%] m-auto space-y-4 ">   
           <!-- bonus input -->
           <label class="" for=""></label>
-          <input id="coupon_input" class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Your Coupon" type="text"><br>
+          <input id="coupon_input" class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Your Coupon" type="text"><br>
           <!-- bonus btn -->
-           <button type="button" id="bonus_btn" class="btn bg-[rgba(8,116,242,1)] text-white  rounded-3xl w-[90%] hover:text-black hover:border-1  hover:bg-[#ebf191] duration-300">Get Bonus</button>
+           <button type="button" id="bonus_btn" class="btn bg-[rgba(8,116,242,1)] text-white  rounded-3xl w-full hover:text-black hover:border-1  hover:bg-[#ebf191] duration-300">Get Bonus</button>
          </div>
             </div>
           
    </section>
 
    <!-- Pay Bill details -->
-    <section id="pay_bill_sec" class=" hidden   cards_details  w-full h-full bg-[rgba(244,245,247,1)] mt-5 rounded-3xl p-5 mb-5">
+    <section id="pay_bill_sec" class=" hidden   cards_details  w-full h-full bg-[rgba(244,245,247,1)] mt-5 rounded-3xl  mb-5">
         <h2 id="pay_bill_h2" class="font-bold text-xl pl-3">Pay Bill</h2> 
         <!-- Pay Bill inputs -->
          <div class="details_inputs_card p-5 bg-white mt-3 rounded-xl w-[86%] m-auto space-y-4 ">
           <label for="">Select To Pay</label><br>
-          <select  class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] text-gray-500 " name="" >
+          <select  class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] text-gray-500 " name="" >
             <option disabled selected  value="">Select BillOption</option>
             <option  class="bill" value="">Current Bill</option>
             <option class="bill" value="">Water Bill</option>
@@ -191,22 +191,22 @@
           </select><br>
           <!-- account number input -->
           <label class="" for="">Account Number</label>
-          <input id="pay_account_num" class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Your Account Number" type="text"><br>
+          <input id="pay_account_num" class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Your Account Number" type="text"><br>
           <!-- pin number input -->
               <label class="" for="">Pin Number</label>
-              <input id="pay_pin_num" class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter 4 Digit Pin" type="text"><br>
+              <input id="pay_pin_num" class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter 4 Digit Pin" type="text"><br>
               <!-- amount to add input -->
                    <label class="" for="">Add To Amount</label>
-          <input id="pay_input" class="mt-2 w-[90%] p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Your Amount To Pay" type="text"><br>
+          <input id="pay_input" class="mt-2 w-full p-2 rounded-2xl border-none bg-[#eff3fa] " placeholder="Enter Your Amount To Pay" type="text"><br>
           <!-- pay bill btn -->
-           <button type="button" id="pay_bill_btn" class="btn bg-[rgba(8,116,242,1)] text-white  rounded-3xl w-[90%] hover:text-black hover:border-1  hover:bg-[#f3789dc2] duration-300">Pay Now</button>
+           <button type="button" id="pay_bill_btn" class="btn bg-[rgba(8,116,242,1)] text-white  rounded-3xl w-full hover:text-black hover:border-1  hover:bg-[#f3789dc2] duration-300">Pay Now</button>
          </div>
            
           
    </section>
    
     <!-- transactions history  -->
-    <section id="transactionSec" class="cards_details   w-full hidden h-full bg-[rgba(244,245,247,1)] mt-5 rounded-3xl p-5 mb-5">
+    <section id="transactionSec" class="cards_details   w-full hidden h-full bg-[rgba(244,245,247,1)] mt-5 rounded-3xl p-2 mb-5">
      <h2 class="font-bold text-xl pl-3">Latest Payment</h2>   
      <div id="history.list" class="details_cards p-3 flex flex-col ">
     
