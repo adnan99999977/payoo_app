@@ -37,7 +37,13 @@ function forLoop(classes) {
 function blockItem(id) {
   let tamp = document.getElementById(id);
   tamp.style.display = "block";
+     setTimeout(() => {
+    tamp.scrollIntoView({ behavior: "smooth" });
+  }, 100);
 }
+
+
+
 
 let addMoney = document.getElementById("add_money");
 addMoney.addEventListener("click", function () {
@@ -153,6 +159,10 @@ const pinNum = 12345;
 //  add money btn
 let addMoneyBtn = document.getElementById("add_money_btn");
 addMoneyBtn.addEventListener("click", function () {
+
+  let section = document.getElementById("add_money_sec");
+    section.scrollIntoView({ behavior: "smooth" }); 
+
   let num = getAmountIntoNum("add_account_num");
   let pin = getAmountIntoNum("add_pin_num");
   let amount = getAmountIntoNum("add_amount_input");
