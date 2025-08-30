@@ -176,7 +176,7 @@ addMoneyBtn.addEventListener("click", function () {
   let TempHeads = document.getElementById('add_money_h2').innerText;
   let heads = TempHeads
  
-  let history = historyListCreate(amount,'./assets/wallet1.png',heads)
+  let history = historyListCreate(amount,'./assets/addmoney.png',heads)
   
 
 });
@@ -214,7 +214,7 @@ cashOutBtn.addEventListener("click", function () {
   );
    let TempHeads = document.getElementById('cash_out_h2').innerText;
   let heads = TempHeads
-  let history = historyListCreate(amount,'./assets/send1.png',heads)
+  let history = historyListCreate(amount,'./assets/cashout.png',heads)
 });
 
 // transfer btn
@@ -260,7 +260,7 @@ transferMoneyBtn.addEventListener("click", function () {
   );
     let TempHeads = document.getElementById('transfer_h2').innerText;
   let heads = TempHeads
-  let history = historyListCreate(amount,'./assets/money1.png',heads)
+  let history = historyListCreate(amount,'./assets/transfermoney.png',heads)
 });
 
 // get bonus btn
@@ -285,7 +285,7 @@ getBonusBtn.addEventListener("click", function () {
 
     let TempHeads = document.getElementById('bonus_h2').innerText;
   let heads = TempHeads
-  let history = historyListCreate(amount,'./assets/bonus1.png',heads)
+  let history = historyListCreate(amount,'./assets/bonus.png',heads)
 });
 
 // pay bill btn
@@ -316,6 +316,6 @@ PayBillBtn.addEventListener("click", function () {
 
    let TempHeads = document.getElementById('pay_bill_h2').innerText;
   let heads = TempHeads
-  let history = historyListCreate(amount,'./assets/purse1.png',heads)
+  let history = historyListCreate(amount,'./assets/paybill.png',heads)
 });
 
